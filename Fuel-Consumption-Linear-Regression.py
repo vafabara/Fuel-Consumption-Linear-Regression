@@ -4,7 +4,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 
 # خواندن فایل CSV
-df = pd.read_csv("FuelConsumption.csv")
+df = pd.read_csv(r"C:\Users\sama.co\Desktop\python projects\Fuel-Consumption-Linear-Regression\FuelConsumption.csv")
 
 # مخلوط کردن داده‌ها و تقسیم به 80 درصد Train و 20 درصد Test
 df = df.sample(frac=1, random_state=42).reset_index(drop=True)
